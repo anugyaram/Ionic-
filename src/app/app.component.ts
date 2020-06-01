@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { MenuPage } from '../pages/menu/menu';
+import { FavoritesPage } from '../pages/favorites/favorites';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,8 +26,9 @@ export class MyApp {
     this.pages = [
       { title: 'Home',icon: 'home', component: HomePage },
       { title: 'Menu', icon: 'list-box', component: MenuPage },
-      { title: 'About',icon: 'information-circle', component: AboutPage },
-      { title: 'Contact Us',icon: 'contact', component: ContactPage }
+      { title: 'About Us',icon: 'information-circle', component: AboutPage },
+      { title: 'Contact Us',icon: 'contact', component: ContactPage },
+      { title: 'My Favorites',icon: 'heart', component: FavoritesPage }
     ];
 
   }

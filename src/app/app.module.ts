@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
@@ -17,6 +18,7 @@ import { LoginPage } from '../pages/login/login';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DishProvider } from '../providers/dish/dish';
 import { LeaderProvider } from '../providers/leader/leader';
@@ -63,6 +65,7 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DishProvider,
+    LocalNotifications,
     LeaderProvider,
     PromotionProvider,
     ProcessHttpmsgProvider,
